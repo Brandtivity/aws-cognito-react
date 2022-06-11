@@ -3,7 +3,7 @@ import './App.css'
 
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
-import { createMuiTheme, ThemeProvider, responsiveFontSizes } from '@material-ui/core/styles'
+import { createTheme, ThemeProvider, responsiveFontSizes } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
 import AuthProvider, { AuthIsSignedIn, AuthIsNotSignedIn } from './contexts/authContext'
@@ -17,14 +17,14 @@ import ChangePassword from './routes/auth/changePassword'
 import Landing from './routes/landing'
 import Home from './routes/home'
 
-let lightTheme = createMuiTheme({
+let lightTheme = createTheme({
   palette: {
     type: 'light',
   },
 })
 lightTheme = responsiveFontSizes(lightTheme)
 
-// let darkTheme = createMuiTheme({
+// let darkTheme = createTheme({
 //   palette: {
 //     type: 'dark',
 //   },

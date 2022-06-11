@@ -81,7 +81,7 @@ export default function ChangePassword() {
 
       {/* Buttons */}
       <Box mt={2}>
-        <Grid container direction="row" justify="center">
+        <Grid container direction="row" justifyContent="center">
           <Box m={1}>
             <Button onClick={() => history.goBack()} color="secondary" variant="contained">
               Cancel
@@ -110,13 +110,13 @@ export default function ChangePassword() {
   )
 
   return (
-    <Grid className={classes.root} container direction="row" justify="center" alignItems="center">
-      <Grid xs={11} sm={6} lg={4} container direction="row" justify="center" alignItems="center" item>
+    <Grid className={classes.root} container direction="row" justifyContent="center" alignItems="center">
+      <Grid xs={11} sm={6} lg={4} container direction="row" justifyContent="center" alignItems="center" item>
         <Paper style={{ width: '100%', padding: 16 }}>
-          <Grid container direction="column" justify="center" alignItems="center">
+          <Grid container direction="column" justifyContent="center" alignItems="center">
             {/* Title */}
             <Box m={3}>
-              <Grid container direction="row" justify="center" alignItems="center">
+              <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Typography variant="h3">Change Password</Typography>
               </Grid>
             </Box>

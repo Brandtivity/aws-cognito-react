@@ -50,15 +50,15 @@ export default function Home() {
 
   return (
     <Grid container>
-      <Grid className={classes.root} container direction="column" justify="center" alignItems="center">
+      <Grid className={classes.root} container direction="column" justifyContent="center" alignItems="center">
         <Box className={classes.hero} p={4}>
-          <Grid className={classes.root} container direction="column" justify="center" alignItems="center">
+          <Grid className={classes.root} container direction="column" justifyContent="center" alignItems="center">
             <Box m={2}>
               <img src={logoImage} width={224} height={224} alt="logo" />
             </Box>
             <Box m={2}>
               <Link underline="none" color="inherit" href="https://github.com/dbroadhurst/aws-cognito-react">
-                <Grid container direction="row" justify="center" alignItems="center">
+                <Grid container direction="row" justifyContent="center" alignItems="center">
                   <Box mr={3}>
                     <GitHubIcon fontSize="large" />
                   </Box>

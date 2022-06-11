@@ -54,10 +54,10 @@ const SignIn: React.FunctionComponent<{}> = () => {
   }
 
   return (
-    <Grid className={classes.root} container direction="row" justify="center" alignItems="center">
-      <Grid xs={11} sm={6} lg={4} container direction="row" justify="center" alignItems="center" item>
+    <Grid className={classes.root} container direction="row" justifyContent="center" alignItems="center">
+      <Grid xs={11} sm={6} lg={4} container direction="row" justifyContent="center" alignItems="center" item>
         <Paper style={{ width: '100%', padding: 32 }}>
-          <Grid container direction="column" justify="center" alignItems="center">
+          <Grid container direction="column" justifyContent="center" alignItems="center">
             {/* Title */}
             <Box m={2}>
               <Typography variant="h3">Sign in</Typography>
@@ -70,7 +70,7 @@ const SignIn: React.FunctionComponent<{}> = () => {
             </Box>
             <Box width="80%" m={1}>
               <Password label="Password" passwordIsValid={passwordIsValid} setPassword={setPassword} />
-              <Grid container direction="row" justify="flex-start" alignItems="center">
+              <Grid container direction="row" justifyContent="flex-start" alignItems="center">
                 <Box onClick={passwordResetClicked} mt={2}>
                   <Typography className={classes.hover} variant="body2">
                     Forgot Password?
@@ -88,7 +88,7 @@ const SignIn: React.FunctionComponent<{}> = () => {
 
             {/* Buttons */}
             <Box mt={2}>
-              <Grid container direction="row" justify="center">
+              <Grid container direction="row" justifyContent="center">
                 <Box m={1}>
                   <Button color="secondary" variant="contained" onClick={() => history.goBack()}>
                     Cancel

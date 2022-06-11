@@ -73,7 +73,7 @@ export default function RequestCode() {
       </Box>
 
       <Box mt={2}>
-        <Grid container direction="row" justify="center">
+        <Grid container direction="row" justifyContent="center">
           <Box m={1}>
             <Button color="secondary" variant="contained" onClick={() => history.goBack()}>
               Cancel
@@ -90,10 +90,10 @@ export default function RequestCode() {
   )
 
   return (
-    <Grid className={classes.root} container direction="row" justify="center" alignItems="center">
-      <Grid xs={11} sm={6} lg={4} container direction="row" justify="center" alignItems="center" item>
+    <Grid className={classes.root} container direction="row" justifyContent="center" alignItems="center">
+      <Grid xs={11} sm={6} lg={4} container direction="row" justifyContent="center" alignItems="center" item>
         <Paper style={{ width: '100%', padding: 32 }}>
-          <Grid container direction="column" justify="center" alignItems="center">
+          <Grid container direction="column" justifyContent="center" alignItems="center">
             <Box m={2}>
               <Typography variant="h3">Send Reset Code</Typography>
             </Box>
